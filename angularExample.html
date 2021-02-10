@@ -1,0 +1,23 @@
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<body>
+		<h1>Arrays in javascript</h1>
+	<div ng-app="" ng-init="person={firstname:'John',secondname:'Doe'}; rollno=23; points=[1,2,3,4,5,6];
+	marks=[{maths: 90,english:100},{maths:50,english:80}]">
+		<p>{{person.firstname}}</p>
+		<p>{{person.secondname}}</p>
+		<p>{{rollno}}</p>
+		 <p> the contents of the array is </p>
+		 <p>{{ points[0] }}</p>
+		 <p>{{ marks[0].maths}}</p>
+
+		 <h1>to Depict the usage of the ng-repeat tag</h1>
+		 This is your score for maths and english
+		 <ul ng-repeat="mark in marks">
+		 	<li>maths:{{ mark.maths}}</li>
+		 	<li>Engish:{{ mark.english}}</li>
+		 	
+		 </ul> 
+		</div>
+	</body>
+</html>

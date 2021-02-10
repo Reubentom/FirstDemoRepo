@@ -1,0 +1,26 @@
+<DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<p>Controller example</p>
+
+<div ng-app="myApp" ng-controller="totalamount">
+
+Quantity: <input type="text" ng-model="quantity"><br><br>
+Rate: <input type="text" ng-model="rate"><br>
+<br>
+total amount: {{quantity * rate}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('totalamount', function($scope) {
+    $scope.quantity= 100;
+    $scope.rate= 20;
+});
+</script>
+
+</body>
+</html>

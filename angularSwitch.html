@@ -1,0 +1,68 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<body ng-app="">
+		<select ng-model='sel'>
+			<option value="0">Sunday
+			<option value="1">Monday
+			<option value="2">Tuesday
+			<option value="3">Wednesday
+			<option value="4">Thursday
+			<option value="5">Friday
+			<option value="6">Saturday
+		</select>
+		<hr>
+		
+
+		<div ng-switch=sel>
+			<div ng-switch-when="0">
+				<h1>Sunday</h1>
+				<p>Welcome..Today is sunday</p>
+				<hr>
+			</div>
+
+			<div ng-switch-when="1">
+				<h1>monday</h1>
+				<p>Welcome..Today is monday</p>
+				<hr>
+			</div>
+
+			<div ng-switch-when="2">
+				<h1>tuesday</h1>
+				<p>Welcome..Today is tuesday</p>
+				<hr>
+			</div>
+
+			<div ng-switch-when="3">
+				<h1>wednesday</h1>
+				<p>Welcome..Today is wednessday</p>
+				<hr>
+			</div>
+
+			<div ng-switch-when="4">
+				<h1>thursday</h1>
+				<p>Welcome..Today is thursday</p>
+				<hr>
+			</div>
+
+			<div ng-switch-when="5">
+				<h1>friday</h1>
+				<p>Welcome..Today is friday</p>
+				<hr>
+			</div>
+
+			<div ng-switch-when="6">
+				<h1>Saturday</h1>
+				<p>Welcome..Today is saturday</p>
+				<hr>
+			</div>
+
+			<div ng-switch-default>
+				<h1>Days of the Week</h1>
+				<p>Choose from the options</p>
+				<hr>
+			</div>
+
+		</div>
+		
+	</body>
+</html>
